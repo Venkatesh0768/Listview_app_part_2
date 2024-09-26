@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/profile_pic_background"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_marginTop="100dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/pic0"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#FF000000"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/ptvname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           android:layout_marginTop="50dp"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:textSize="40dp"
+           android:text="Name" />
+
+       <TextView
+           android:id="@+id/ptvnumber"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:textSize="40dp"
+           android:text="Phone Number " />
+
+       <Button
+           android:id="@+id/btnCall"
+           android:layout_margin="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="call Now"
+           android:backgroundTint="#017AC1"/>
+
+   </LinearLayout>
+
+
+</LinearLayout>
